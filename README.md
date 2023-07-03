@@ -4,7 +4,7 @@
 
 By [Baoru Huang](https://baoru.netlify.app/), Yicheng Hu, [Anh Nguyen](https://www.csc.liv.ac.uk/~anguyen), Stamatia Giannarou, Daniel S. Elson
 
-![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/main_network2.pdf "main_network2")
+![embed](https://github.com/br0202/Sensing_area_detection/blob/master/figure/main_network2.pdf "main_network2")
 
 ### Contents
 1. [Requirements](#requirements)
@@ -33,8 +33,8 @@ Coffbea dataset includes: everything included in Jerry dataset, and the ground t
 	
 
 2. Labelling:
-![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/dataset-all.pdf "dataset")
-![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/label.pdf "PCA")
+![embed](https://github.com/br0202/Sensing_area_detection/blob/master/figure/dataset-all.pdf "dataset")
+![embed](https://github.com/br0202/Sensing_area_detection/blob/master/figure/label.pdf "PCA")
 
 3. Training:
 	- Change the data directory to the folder of data
@@ -46,7 +46,7 @@ Coffbea dataset includes: everything included in Jerry dataset, and the ground t
     - `python main.py --mode test`
 
 5. Results
-![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/vis.pdf "results")
+![embed](https://github.com/br0202/Sensing_area_detection/blob/master/figure/vis.pdf "results")
 
 
 ### Citing 
