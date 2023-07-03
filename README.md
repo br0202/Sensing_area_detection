@@ -27,19 +27,14 @@ By [Baoru Huang](https://baoru.netlify.app/), Yicheng Hu, [Anh Nguyen](https://w
   <img src="https://github.com/br0202/Sensing_area_detection/blob/master/figure/Picture4.png" width="370" />
   <img src="https://github.com/br0202/Sensing_area_detection/blob/master/figure/probe.jpeg" width="360" /> 
 </p>
-
 	- Jerry dataset includes: Stereo laparoscopic images with standard illumination, Stereo laparoscopic images with laser on and laparoscopic light off, laser segmentation mask, laser center point ground truth, and PCA line points txt files. 
 	- Coffbea dataset includes: everything included in Jerry dataset, and the ground truth depth map of every frames.
 	
 
 2. Labelling:
-
 ![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/dataset-all.png "dataset")
-
 	- Example data. (a) Standard illumination left RGB image; (b) left image with laser on and laparoscopic light off; same for (c) and (d) but for right images
-
 ![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/label.png "PCA")
-
 	- Problem Definition. (a) The input RGB image, (b) The estimated line using PCA for obtaining principal points, (c) The image with laser on that we used to detect the intersection ground truth
 
 3. Training:
