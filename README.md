@@ -22,13 +22,13 @@ By [Baoru Huang](https://baoru.netlify.app/), Yicheng Hu, [Anh Nguyen](https://w
 ### Training & Testing
 
 1. We train the Network on Jerry dataset and Coffbea dataset
+	- Jerry dataset includes: Stereo laparoscopic images with standard illumination, Stereo laparoscopic images with laser on and laparoscopic light off, laser segmentation mask, laser center point ground truth, and PCA line points txt files. 
+	- Coffbea dataset includes: everything included in Jerry dataset, and the ground truth depth map of every frames.
 
 <p float="left">
   <img src="https://github.com/br0202/Sensing_area_detection/blob/master/figure/Picture4.png" width="370" />
   <img src="https://github.com/br0202/Sensing_area_detection/blob/master/figure/probe.jpeg" width="360" /> 
 </p>
-	- Jerry dataset includes: Stereo laparoscopic images with standard illumination, Stereo laparoscopic images with laser on and laparoscopic light off, laser segmentation mask, laser center point ground truth, and PCA line points txt files. 
-	- Coffbea dataset includes: everything included in Jerry dataset, and the ground truth depth map of every frames.
 	
 
 2. Labelling:
