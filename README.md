@@ -4,7 +4,7 @@
 
 By [Baoru Huang](https://baoru.netlify.app/), Yicheng Hu, [Anh Nguyen](https://www.csc.liv.ac.uk/~anguyen), Stamatia Giannarou, Daniel S. Elson
 
-![embed](https://github.com/br0202/Sensing_area_detection/blob/master/figure/main_network2.pdf "main_network2")
+[embed]https://github.com/br0202/Sensing_area_detection/blob/master/figure/main_network2.pdf[/embed]
 
 ### Contents
 1. [Requirements](#requirements)
