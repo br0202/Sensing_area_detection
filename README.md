@@ -8,8 +8,9 @@ By [Baoru Huang](https://baoru.netlify.app/), Yicheng Hu, [Anh Nguyen](https://w
 
 ### Contents
 1. [Requirements](#requirements)
-2. [Training&Testing](#training)
-3. [Notes](#notes)
+2. [Dataset](#dataset)
+3. [Training&Testing](#Training & Testing)
+4. [Notes](#Citing)
 
 
 ### Requirements
@@ -18,18 +19,14 @@ By [Baoru Huang](https://baoru.netlify.app/), Yicheng Hu, [Anh Nguyen](https://w
 	- `cd $Sensing_area_detection`
 	- `conda env create -f environment.yml`
 
-	
-### Training & Testing
-
-1. We train the Network on Jerry dataset and Coffbea dataset
-	- Jerry dataset includes: Stereo laparoscopic images with standard illumination, Stereo laparoscopic images with laser on and laparoscopic light off, laser segmentation mask, laser center point ground truth, and PCA line points txt files. 
-	- Coffbea dataset includes: everything included in Jerry dataset, and the ground truth depth map of every frames.
-
+### Dataset
 <p align="center">
   <img src="https://github.com/br0202/Sensing_area_detection/blob/master/figure/Picture4.png" width="370" />
   <img src="https://github.com/br0202/Sensing_area_detection/blob/master/figure/probe.jpeg" width="360" /> 
 </p>
-	
+1. We newly acquired two datasets: 1) Jerry dataset and 2) Coffbea dataset
+	- Jerry dataset includes: Stereo laparoscopic images with standard illumination, Stereo laparoscopic images with laser on and laparoscopic light off, laser segmentation mask, laser center point ground truth, and PCA line points txt files. 
+	- Coffbea dataset includes: everything included in Jerry dataset, and the ground truth depth map of every frames.
 
 2. Labelling:
 	- Example data. (a) Standard illumination left RGB image; (b) left image with laser on and laparoscopic light off; same for (c) and (d) but for right images
@@ -37,17 +34,18 @@ By [Baoru Huang](https://baoru.netlify.app/), Yicheng Hu, [Anh Nguyen](https://w
 	- Problem Definition. (a) The input RGB image, (b) The estimated line using PCA for obtaining principal points, (c) The image with laser on that we used to detect the intersection ground truth	
 ![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/label.png "PCA")
 	
+### Training & Testing
 
-3. Training:
+1. Training:
 	- Change the data directory to the folder of data
 	- `cd $Sensing_area_detection`
 	- `python main.py --mode train`
 	
-4. Test:
+2. Test:
     - `cd $Sensing_area_detection`
     - `python main.py --mode test`
 
-5. Results:
+3. Results:
 	- Qualitative results. (a) and (c) are standard illumination images and (b) and (d) are images with laser on and laparoscopic light off. The predicted intersection point is shown in blue and the green point indicates the ground truth, which are further indicated by arrows for clarity
 ![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/vis.png "results")
 	
