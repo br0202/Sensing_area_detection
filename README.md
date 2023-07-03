@@ -4,7 +4,7 @@
 
 By [Baoru Huang](https://baoru.netlify.app/), Yicheng Hu, [Anh Nguyen](https://www.csc.liv.ac.uk/~anguyen), Stamatia Giannarou, Daniel S. Elson
 
-![image](https://github.com/br0202/M3Depth/blob/master/vis/frameworks.png "m3depth")
+![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/main_network2.pdf "main_network2")
 
 ### Contents
 1. [Requirements](#requirements)
@@ -24,17 +24,17 @@ By [Baoru Huang](https://baoru.netlify.app/), Yicheng Hu, [Anh Nguyen](https://w
 1. We train the Network on Jerry dataset and Coffbea dataset
 
 <p float="left">
-  <img src="https://github.com/br0202/Sensing_area_detection/blob/master/figure/Picture4.png" width="360" />
+  <img src="https://github.com/br0202/Sensing_area_detection/blob/master/figure/Picture4.png" width="380" />
   <img src="https://github.com/br0202/Sensing_area_detection/blob/master/figure/probe.jpeg" width="360" /> 
 </p>
 
-	- Jerry dataset includes: Stereo laparoscopic images with standard illumination, Stereo laparoscopic images with laser on and laparoscopic light off, laser segmentation mask, laser center point ground truth, and PCA line points txt files. 
-	- Coffbea dataset includes: everything included in Jerry dataset, and the ground truth depth map of every frames.
+Jerry dataset includes: Stereo laparoscopic images with standard illumination, Stereo laparoscopic images with laser on and laparoscopic light off, laser segmentation mask, laser center point ground truth, and PCA line points txt files. 
+Coffbea dataset includes: everything included in Jerry dataset, and the ground truth depth map of every frames.
 	
 
 2. Labelling:
-![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/dataset-all.pdf)
-![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/label.pdf)
+![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/dataset-all.pdf "dataset")
+![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/label.pdf "PCA")
 
 3. Training:
 	- Change the data directory to the folder of data
@@ -46,7 +46,7 @@ By [Baoru Huang](https://baoru.netlify.app/), Yicheng Hu, [Anh Nguyen](https://w
     - `python main.py --mode test`
 
 5. Results
-![image](https://github.com/br0202/M3Depth/blob/master/vis/quan_results.png "results")
+![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/vis.pdf "results")
 
 
 ### Citing 
