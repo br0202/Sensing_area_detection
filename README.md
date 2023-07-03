@@ -33,11 +33,12 @@ Coffbea dataset includes: everything included in Jerry dataset, and the ground t
 	
 
 2. Labelling:
-Example data. (a) Standard illumination left RGB image; (b) left image with laser on and laparoscopic light off; same for (c) and (d) but for right images
-![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/dataset-all.png "dataset")
 
-Problem Definition. (a) The input RGB image, (b) The estimated line using PCA for obtaining principal points, (c) The image with laser on that we used to detect the intersection ground truth
+![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/dataset-all.png "dataset")
+	- Example data. (a) Standard illumination left RGB image; (b) left image with laser on and laparoscopic light off; same for (c) and (d) but for right images
+
 ![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/label.png "PCA")
+	- Problem Definition. (a) The input RGB image, (b) The estimated line using PCA for obtaining principal points, (c) The image with laser on that we used to detect the intersection ground truth
 
 3. Training:
 	- Change the data directory to the folder of data
@@ -48,10 +49,9 @@ Problem Definition. (a) The input RGB image, (b) The estimated line using PCA fo
     - `cd $Sensing_area_detection`
     - `python main.py --mode test`
 
-5. Results
-Qualitative results. (a) and (c) are standard illumination images and (b) and (d) are images with laser on and laparoscopic light off. The predicted intersection point is shown in blue and the green point indicates the ground truth, which are further indicated by arrows for clarity
+5. Results:
 ![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/vis.png "results")
-
+	- Qualitative results. (a) and (c) are standard illumination images and (b) and (d) are images with laser on and laparoscopic light off. The predicted intersection point is shown in blue and the green point indicates the ground truth, which are further indicated by arrows for clarity
 
 ### Citing 
 
