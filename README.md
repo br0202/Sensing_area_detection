@@ -4,7 +4,7 @@
 
 By [Baoru Huang](https://baoru.netlify.app/), Yicheng Hu, [Anh Nguyen](https://www.csc.liv.ac.uk/~anguyen), Stamatia Giannarou, Daniel S. Elson
 
-[embed]https://github.com/br0202/Sensing_area_detection/blob/master/figure/main_network2.pdf[/embed]
+![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/main_network2.png "Network")
 
 ### Contents
 1. [Requirements](#requirements)
@@ -24,7 +24,7 @@ By [Baoru Huang](https://baoru.netlify.app/), Yicheng Hu, [Anh Nguyen](https://w
 1. We train the Network on Jerry dataset and Coffbea dataset
 
 <p float="left">
-  <img src="https://github.com/br0202/Sensing_area_detection/blob/master/figure/Picture4.png" width="380" />
+  <img src="https://github.com/br0202/Sensing_area_detection/blob/master/figure/Picture4.png" width="370" />
   <img src="https://github.com/br0202/Sensing_area_detection/blob/master/figure/probe.jpeg" width="360" /> 
 </p>
 
@@ -33,8 +33,11 @@ Coffbea dataset includes: everything included in Jerry dataset, and the ground t
 	
 
 2. Labelling:
-![embed](https://github.com/br0202/Sensing_area_detection/blob/master/figure/dataset-all.pdf "dataset")
-![embed](https://github.com/br0202/Sensing_area_detection/blob/master/figure/label.pdf "PCA")
+Example data. (a) Standard illumination left RGB image; (b) left image with laser on and laparoscopic light off; same for (c) and (d) but for right images
+![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/dataset-all.png "dataset")
+
+Problem Definition. (a) The input RGB image, (b) The estimated line using PCA for obtaining principal points, (c) The image with laser on that we used to detect the intersection ground truth
+![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/label.png "PCA")
 
 3. Training:
 	- Change the data directory to the folder of data
@@ -46,7 +49,8 @@ Coffbea dataset includes: everything included in Jerry dataset, and the ground t
     - `python main.py --mode test`
 
 5. Results
-![embed](https://github.com/br0202/Sensing_area_detection/blob/master/figure/vis.pdf "results")
+Qualitative results. (a) and (c) are standard illumination images and (b) and (d) are images with laser on and laparoscopic light off. The predicted intersection point is shown in blue and the green point indicates the ground truth, which are further indicated by arrows for clarity
+![image](https://github.com/br0202/Sensing_area_detection/blob/master/figure/vis.png "results")
 
 
 ### Citing 
